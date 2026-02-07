@@ -50,6 +50,11 @@ for(let i = 0 ; i < stars.length ; i++){
 const ratingContainer = document.querySelector(".rating");
 
 ratingContainer.addEventListener("mouseleave", function(){
-    if(selectedIdx != -1)   fillStars(selectedIdx);
-    else clearStars();
+    if(selectedIdx !== -1){
+        fillStars(selectedIdx);
+    }
+    else{
+        clearStars();
+        ratingText.innerText = " "; //it will clear the rating txt until no rating
+    }
 });
