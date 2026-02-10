@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Online shopping site for mobile, laptop, furniture</title>
+</head>
+<body>
+    <main>
+        
+        <section class="searchWrapper">
+
+            <!-- Search Box -->
+            <form class="searchBox" id="searchForm">
+                <i class="bi bi-search" id="searchIcon"></i>
+                <input 
+                    type="search" 
+                    id="searchInput"
+                    placeholder="Search for Products,Brands and more"
+                    autocomplete="off"
+                />
+            </form>
+
+            <!-- DropDown -->
+            <section class="dropDown" id="dropdown">
+                <ul id="suggestionList">
+                    <!-- JS will inject <li> at run time -->
+                </ul>
+            </section>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
