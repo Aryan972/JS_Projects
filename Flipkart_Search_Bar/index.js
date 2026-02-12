@@ -24,7 +24,7 @@ let debounceTimer = null;
 
 //timer update
 searchInput.addEventListener("input", function(){
-    const query = searchInput.value.trim(); //trim extra spaces
+    const query = searchInput.value.trim(); //get the input from user and trim extra spaces
     
     //cancel any pending timer
     clearTimeout(debounceTimer);
