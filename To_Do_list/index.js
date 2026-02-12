@@ -60,11 +60,16 @@ function renderTasks(){
             span.style.opacity = "0.6";
         }
 
-        
+
 
         //Delete Task
         const deleteBtn = document.createElement("button");
-        deleteBtn.textContent = "Delete";
+        deleteBtn.classList.add("deleteBtn");
+
+        const icon = document.createElement("i");
+        icon.classList.add("bi", "bi-x-lg");
+
+        deleteBtn.appendChild(icon);
 
         //delete task
         deleteBtn.addEventListener("click", function(){

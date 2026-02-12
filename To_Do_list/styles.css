@@ -73,7 +73,7 @@ h2{
     justify-content: space-between;
     padding: 10px 12px;
     border-bottom: 1px solid #ddd;
-    transition: background 0.2s ease;
+    transition:  0.2s ease;
 }
 
 .taskItem:hover {
